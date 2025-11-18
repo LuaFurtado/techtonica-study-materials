@@ -3,7 +3,14 @@ const newspapers = [
   "https://www.washingtonpost.com",
   "http://www.economist.com"
 ];
-
+// test loop
+for (let i = 0; i < newspapers.length; i++) {
+  console.log(newspapers[i]);
+}
+const content = document.querySelector("#content");
+for (let i = 0; i <newspapers.length; i++){
+  content.innerHTML += `<h1><a href="${newspapers[i]}">${newspapers[i]}</a></h1>`;
+}
 // Write a function that shows on the page a list of newspapers.
 // Each link must be clickable.
 // You have been provided some code to get you started. These are suggestions, you may implement this differently than suggested.
