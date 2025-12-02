@@ -9,3 +9,7 @@ reverseString("Howdy") should return the string ydwoH.
 reverseString("Greetings from Earth") should return the string htraE morf sgniteerG.
 
 */
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString("hello"));
